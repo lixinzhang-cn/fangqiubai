@@ -1,1 +1,0 @@
-<view><topic-info vue-id="1" item="{{topicInfo}}" bind:__l="__l"></topic-info></view>

@@ -1,9 +1,0 @@
-{
-  "usingComponents": {
-    "load-more": "/components/common/load-more",
-    "news-tab-bar": "/components/news/news-tab-bar",
-    "common-list": "/components/common/common-list",
-    "topic-nav": "/components/common/topic-nav",
-    "topic-news": "/components/news/topic-news"
-  }
-}
