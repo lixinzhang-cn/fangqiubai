@@ -1,0 +1,28 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "小纸条",
+  "titleNView": {
+    "buttons": [
+      {
+        "color": "#000000",
+        "colorPressed": "#BBBBBB",
+        "float": "left",
+        "fontSize": "22px",
+        "fontSrc": "/static/font/icon.ttf",
+        "text": ""
+      },
+      {
+        "color": "#000000",
+        "colorPressed": "#BBBBBB",
+        "float": "right",
+        "fontSize": "22px",
+        "fontSrc": "/static/font/icon.ttf",
+        "text": ""
+      }
+    ]
+  },
+  "usingComponents": {
+    "paper-list12": "/components/paper/paper-list12",
+    "load-more": "/components/common/load-more"
+  }
+}
