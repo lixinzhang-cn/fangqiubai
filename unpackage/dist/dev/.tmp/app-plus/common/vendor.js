@@ -1,16 +1,16 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
 
-/***/ "../../workspace/仿糗事百科/main.js":
-/*!****************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/main.js ***!
-  \****************************************************/
+/***/ "../../workspace/fangqiubai/main.js":
+/*!*********************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../workspace/仿糗事百科/pages.json");
+/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../workspace/仿糗事百科/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../workspace/fangqiubai/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
 
 _vue.default.config.productionTip = false;
 
@@ -24,163 +24,180 @@ createApp(app).$mount();
 
 /***/ }),
 
-/***/ "../../workspace/仿糗事百科/main.js?{\"page\":\"pages%2Fadd-input%2Fadd-input\"}":
-/*!*********************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/main.js?{"page":"pages%2Fadd-input%2Fadd-input"} ***!
-  \*********************************************************************************************/
+/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fadd-input%2Fadd-input\"}":
+/*!**************************************************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fadd-input%2Fadd-input"} ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/仿糗事百科/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _addInput = _interopRequireDefault(__webpack_require__(/*! ./pages/add-input/add-input.vue */ "../../workspace/仿糗事百科/pages/add-input/add-input.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _addInput = _interopRequireDefault(__webpack_require__(/*! ./pages/add-input/add-input.vue */ "../../workspace/fangqiubai/pages/add-input/add-input.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_addInput.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/仿糗事百科/main.js?{\"page\":\"pages%2Fhome%2Fhome\"}":
-/*!***********************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/main.js?{"page":"pages%2Fhome%2Fhome"} ***!
-  \***********************************************************************************/
+/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fhome%2Fhome\"}":
+/*!****************************************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fhome%2Fhome"} ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/仿糗事百科/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _home = _interopRequireDefault(__webpack_require__(/*! ./pages/home/home.vue */ "../../workspace/仿糗事百科/pages/home/home.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _home = _interopRequireDefault(__webpack_require__(/*! ./pages/home/home.vue */ "../../workspace/fangqiubai/pages/home/home.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_home.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/仿糗事百科/main.js?{\"page\":\"pages%2Findex%2Findex\"}":
-/*!*************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \*************************************************************************************/
+/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Findex%2Findex\"}":
+/*!******************************************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Findex%2Findex"} ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/仿糗事百科/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ "../../workspace/仿糗事百科/pages/index/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ "../../workspace/fangqiubai/pages/index/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_index.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/仿糗事百科/main.js?{\"page\":\"pages%2Fnews%2Fnews\"}":
-/*!***********************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/main.js?{"page":"pages%2Fnews%2Fnews"} ***!
-  \***********************************************************************************/
+/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fnews%2Fnews\"}":
+/*!****************************************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fnews%2Fnews"} ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/仿糗事百科/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _news = _interopRequireDefault(__webpack_require__(/*! ./pages/news/news.vue */ "../../workspace/仿糗事百科/pages/news/news.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _news = _interopRequireDefault(__webpack_require__(/*! ./pages/news/news.vue */ "../../workspace/fangqiubai/pages/news/news.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_news.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/仿糗事百科/main.js?{\"page\":\"pages%2Fpaper%2Fpaper\"}":
-/*!*************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/main.js?{"page":"pages%2Fpaper%2Fpaper"} ***!
-  \*************************************************************************************/
+/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fpaper%2Fpaper\"}":
+/*!******************************************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fpaper%2Fpaper"} ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/仿糗事百科/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _paper = _interopRequireDefault(__webpack_require__(/*! ./pages/paper/paper.vue */ "../../workspace/仿糗事百科/pages/paper/paper.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _paper = _interopRequireDefault(__webpack_require__(/*! ./pages/paper/paper.vue */ "../../workspace/fangqiubai/pages/paper/paper.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_paper.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/仿糗事百科/main.js?{\"page\":\"pages%2Fpaper-friends%2Fpaper-friends\"}":
-/*!*****************************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/main.js?{"page":"pages%2Fpaper-friends%2Fpaper-friends"} ***!
-  \*****************************************************************************************************/
+/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fpaper-friends%2Fpaper-friends\"}":
+/*!**********************************************************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fpaper-friends%2Fpaper-friends"} ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/仿糗事百科/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _paperFriends = _interopRequireDefault(__webpack_require__(/*! ./pages/paper-friends/paper-friends.vue */ "../../workspace/仿糗事百科/pages/paper-friends/paper-friends.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _paperFriends = _interopRequireDefault(__webpack_require__(/*! ./pages/paper-friends/paper-friends.vue */ "../../workspace/fangqiubai/pages/paper-friends/paper-friends.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_paperFriends.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/仿糗事百科/main.js?{\"page\":\"pages%2Fsearch%2Fsearch\"}":
-/*!***************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/main.js?{"page":"pages%2Fsearch%2Fsearch"} ***!
-  \***************************************************************************************/
+/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fsearch%2Fsearch\"}":
+/*!********************************************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fsearch%2Fsearch"} ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/仿糗事百科/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _search = _interopRequireDefault(__webpack_require__(/*! ./pages/search/search.vue */ "../../workspace/仿糗事百科/pages/search/search.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _search = _interopRequireDefault(__webpack_require__(/*! ./pages/search/search.vue */ "../../workspace/fangqiubai/pages/search/search.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_search.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/仿糗事百科/main.js?{\"page\":\"pages%2Ftopic-detail%2Ftopic-detail\"}":
-/*!***************************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/main.js?{"page":"pages%2Ftopic-detail%2Ftopic-detail"} ***!
-  \***************************************************************************************************/
+/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Ftopic-detail%2Ftopic-detail\"}":
+/*!********************************************************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Ftopic-detail%2Ftopic-detail"} ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/仿糗事百科/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _topicDetail = _interopRequireDefault(__webpack_require__(/*! ./pages/topic-detail/topic-detail.vue */ "../../workspace/仿糗事百科/pages/topic-detail/topic-detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _topicDetail = _interopRequireDefault(__webpack_require__(/*! ./pages/topic-detail/topic-detail.vue */ "../../workspace/fangqiubai/pages/topic-detail/topic-detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_topicDetail.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/仿糗事百科/main.js?{\"page\":\"pages%2Ftopic-nav%2Ftopic-nav\"}":
-/*!*********************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/main.js?{"page":"pages%2Ftopic-nav%2Ftopic-nav"} ***!
-  \*********************************************************************************************/
+/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Ftopic-nav%2Ftopic-nav\"}":
+/*!**************************************************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Ftopic-nav%2Ftopic-nav"} ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/仿糗事百科/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _topicNav = _interopRequireDefault(__webpack_require__(/*! ./pages/topic-nav/topic-nav.vue */ "../../workspace/仿糗事百科/pages/topic-nav/topic-nav.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _topicNav = _interopRequireDefault(__webpack_require__(/*! ./pages/topic-nav/topic-nav.vue */ "../../workspace/fangqiubai/pages/topic-nav/topic-nav.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_topicNav.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/仿糗事百科/pages.json":
-/*!*******************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/仿糗事百科/pages.json ***!
-  \*******************************************************/
+/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fuser-chat%2Fuser-chat\"}":
+/*!**************************************************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fuser-chat%2Fuser-chat"} ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _userChat = _interopRequireDefault(__webpack_require__(/*! ./pages/user-chat/user-chat.vue */ "../../workspace/fangqiubai/pages/user-chat/user-chat.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_userChat.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../workspace/fangqiubai/pages.json":
+/*!************************************************************!*\
+  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/pages.json ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -694,7 +711,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -6892,7 +6909,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -6913,14 +6930,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -6989,7 +7006,7 @@ var patch = function(oldVnode, vnode) {
         });
         var diffData = diff(data, mpData);
         if (Object.keys(diffData).length) {
-            if (Object({"VUE_APP_PLATFORM":"app-plus","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+            if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"app-plus","BASE_URL":"/"}).VUE_APP_DEBUG) {
                 console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
                     ']差量更新',
                     JSON.stringify(diffData));

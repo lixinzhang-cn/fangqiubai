@@ -1,6 +1,6 @@
 <template>
 
-	<view class="paper-list u-f-ac animated bounceInLeft fast">
+	<view class="paper-list u-f-ac animated bounceInLeft fast" @tap="openUserChat">
 		<image :src="item.paperpic" mode="widthFix" lazy-load></image>
 		<view>
 			<view class="u-f-ac u-f-jsb">{{item.nickname}}<view>{{item.time}}</view></view>
@@ -23,6 +23,13 @@
 		props:{
 			item:Object,
 			index:Number
+		},
+		methods:{
+			openUserChat(){
+				uni.navigateTo({
+					url: '../../pages/user-chat/user-chat',
+				});
+			}
 		}
 	}
 </script>
