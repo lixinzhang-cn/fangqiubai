@@ -9,7 +9,8 @@
     "pages/topic-nav/topic-nav",
     "pages/topic-detail/topic-detail",
     "pages/paper-friends/paper-friends",
-    "pages/user-chat/user-chat"
+    "pages/user-chat/user-chat",
+    "pages/details/details"
   ],
   "subPackages": [],
   "window": {

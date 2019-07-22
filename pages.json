@@ -87,6 +87,7 @@
         ,{
             "path" : "pages/search/search",
             "style" : {
+				"enablePullDownRefresh":true,//允许下拉刷新
 				"app-plus":{
 					"scrollIndicator":"none",//隐藏滚动条
 					
@@ -209,6 +210,24 @@
 						]
 					}
 				}
+			}
+        }
+        ,{
+            "path" : "pages/details/details",
+            "style" : {
+				"navigationBarTitleText":"内容详情页",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"bounce":"none",
+					"titleNView":{
+						"buttons":[
+							{
+								"type":"menu"
+							}
+						]
+					}
+				}
+				
 			}
         }
     ],

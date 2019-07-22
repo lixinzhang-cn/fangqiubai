@@ -1,11 +1,11 @@
 
-.cell-pd.data-v-07eff01a {
+.cell-pd.data-v-08dd7a62 {
 	padding: 22rpx 30rpx;
 }
-.list-pd.data-v-07eff01a {
+.list-pd.data-v-08dd7a62 {
 	margin-top: 50rpx;
 }
-.icon-shanchu.data-v-07eff01a{
+.icon-shanchu.data-v-08dd7a62{
 	position: absolute;
 	top:0;
 	right:0;
@@ -15,7 +15,7 @@
 	-webkit-border-radius: 10rpx;
 	        border-radius: 10rpx;
 }
-.uni-uploader__file.data-v-07eff01a{
+.uni-uploader__file.data-v-08dd7a62{
 	position: relative;
 }
 

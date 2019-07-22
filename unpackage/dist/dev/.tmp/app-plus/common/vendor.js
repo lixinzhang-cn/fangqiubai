@@ -1,16 +1,88 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
 
-/***/ "../../workspace/fangqiubai/main.js":
-/*!*********************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js ***!
-  \*********************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/common/time.js":
+/*!*************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/common/time.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var gettime = {
+  // 获取聊天时间（相差300s内的信息不会显示时间）
+  getChatTime: function getChatTime(v1, v2) {
+    v1 = v1.toString().length < 13 ? v1 * 1000 : v1;
+    v2 = v2.toString().length < 13 ? v2 * 1000 : v2;
+    if ((parseInt(v1) - parseInt(v2)) / 1000 > 300) {
+      return this.gettime(v1);
+    }
+  },
+  // 人性化时间格式
+  gettime: function gettime(shorttime) {
+    shorttime = shorttime.toString().length < 13 ? shorttime * 1000 : shorttime;
+    var now = new Date().getTime();
+    var cha = (now - parseInt(shorttime)) / 1000;
+
+    if (cha < 43200) {
+      // 当天
+      return this.dateFormat(new Date(shorttime), "{A} {t}:{ii}");
+    } else if (cha < 518400) {
+      // 隔天 显示日期+时间
+      return this.dateFormat(new Date(shorttime), "{Mon}月{DD}日 {A} {t}:{ii}");
+    } else {
+      // 隔年 显示完整日期+时间
+      return this.dateFormat(new Date(shorttime), "{Y}-{MM}-{DD} {A} {t}:{ii}");
+    }
+  },
+
+  parseNumber: function parseNumber(num) {
+    return num < 10 ? "0" + num : num;
+  },
+
+  dateFormat: function dateFormat(date, formatStr) {
+    var dateObj = {},
+    rStr = /\{([^}]+)\}/,
+    mons = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'];
+
+    dateObj["Y"] = date.getFullYear();
+    dateObj["M"] = date.getMonth() + 1;
+    dateObj["MM"] = this.parseNumber(dateObj["M"]);
+    dateObj["Mon"] = mons[dateObj['M'] - 1];
+    dateObj["D"] = date.getDate();
+    dateObj["DD"] = this.parseNumber(dateObj["D"]);
+    dateObj["h"] = date.getHours();
+    dateObj["hh"] = this.parseNumber(dateObj["h"]);
+    dateObj["t"] = dateObj["h"] > 12 ? dateObj["h"] - 12 : dateObj["h"];
+    dateObj["tt"] = this.parseNumber(dateObj["t"]);
+    dateObj["A"] = dateObj["h"] > 12 ? '下午' : '上午';
+    dateObj["i"] = date.getMinutes();
+    dateObj["ii"] = this.parseNumber(dateObj["i"]);
+    dateObj["s"] = date.getSeconds();
+    dateObj["ss"] = this.parseNumber(dateObj["s"]);
+
+    while (rStr.test(formatStr)) {
+      formatStr = formatStr.replace(rStr, dateObj[RegExp.$1]);
+    }
+    return formatStr;
+  } };var _default =
+
+
+{
+  gettime: gettime };exports.default = _default;
+
+/***/ }),
+
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js":
+/*!******************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../workspace/fangqiubai/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../../../DEV/HBuilder/fangqiubai/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
 
 _vue.default.config.productionTip = false;
 
@@ -24,180 +96,197 @@ createApp(app).$mount();
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fadd-input%2Fadd-input\"}":
-/*!**************************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fadd-input%2Fadd-input"} ***!
-  \**************************************************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Fadd-input%2Fadd-input\"}":
+/*!***********************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Fadd-input%2Fadd-input"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _addInput = _interopRequireDefault(__webpack_require__(/*! ./pages/add-input/add-input.vue */ "../../workspace/fangqiubai/pages/add-input/add-input.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _addInput = _interopRequireDefault(__webpack_require__(/*! ./pages/add-input/add-input.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/add-input/add-input.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_addInput.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fhome%2Fhome\"}":
-/*!****************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fhome%2Fhome"} ***!
-  \****************************************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Fdetails%2Fdetails\"}":
+/*!*******************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Fdetails%2Fdetails"} ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _home = _interopRequireDefault(__webpack_require__(/*! ./pages/home/home.vue */ "../../workspace/fangqiubai/pages/home/home.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _details = _interopRequireDefault(__webpack_require__(/*! ./pages/details/details.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/details/details.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_details.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Fhome%2Fhome\"}":
+/*!*************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Fhome%2Fhome"} ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _home = _interopRequireDefault(__webpack_require__(/*! ./pages/home/home.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/home/home.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_home.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Findex%2Findex\"}":
-/*!******************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \******************************************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Findex%2Findex\"}":
+/*!***************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Findex%2Findex"} ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ "../../workspace/fangqiubai/pages/index/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/index/index.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_index.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fnews%2Fnews\"}":
-/*!****************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fnews%2Fnews"} ***!
-  \****************************************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Fnews%2Fnews\"}":
+/*!*************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Fnews%2Fnews"} ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _news = _interopRequireDefault(__webpack_require__(/*! ./pages/news/news.vue */ "../../workspace/fangqiubai/pages/news/news.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _news = _interopRequireDefault(__webpack_require__(/*! ./pages/news/news.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/news/news.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_news.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fpaper%2Fpaper\"}":
-/*!******************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fpaper%2Fpaper"} ***!
-  \******************************************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Fpaper%2Fpaper\"}":
+/*!***************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Fpaper%2Fpaper"} ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _paper = _interopRequireDefault(__webpack_require__(/*! ./pages/paper/paper.vue */ "../../workspace/fangqiubai/pages/paper/paper.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _paper = _interopRequireDefault(__webpack_require__(/*! ./pages/paper/paper.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/paper/paper.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_paper.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fpaper-friends%2Fpaper-friends\"}":
-/*!**********************************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fpaper-friends%2Fpaper-friends"} ***!
-  \**********************************************************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Fpaper-friends%2Fpaper-friends\"}":
+/*!*******************************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Fpaper-friends%2Fpaper-friends"} ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _paperFriends = _interopRequireDefault(__webpack_require__(/*! ./pages/paper-friends/paper-friends.vue */ "../../workspace/fangqiubai/pages/paper-friends/paper-friends.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _paperFriends = _interopRequireDefault(__webpack_require__(/*! ./pages/paper-friends/paper-friends.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/paper-friends/paper-friends.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_paperFriends.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fsearch%2Fsearch\"}":
-/*!********************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fsearch%2Fsearch"} ***!
-  \********************************************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Fsearch%2Fsearch\"}":
+/*!*****************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Fsearch%2Fsearch"} ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _search = _interopRequireDefault(__webpack_require__(/*! ./pages/search/search.vue */ "../../workspace/fangqiubai/pages/search/search.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _search = _interopRequireDefault(__webpack_require__(/*! ./pages/search/search.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/search/search.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_search.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Ftopic-detail%2Ftopic-detail\"}":
-/*!********************************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Ftopic-detail%2Ftopic-detail"} ***!
-  \********************************************************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Ftopic-detail%2Ftopic-detail\"}":
+/*!*****************************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Ftopic-detail%2Ftopic-detail"} ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _topicDetail = _interopRequireDefault(__webpack_require__(/*! ./pages/topic-detail/topic-detail.vue */ "../../workspace/fangqiubai/pages/topic-detail/topic-detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _topicDetail = _interopRequireDefault(__webpack_require__(/*! ./pages/topic-detail/topic-detail.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/topic-detail/topic-detail.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_topicDetail.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Ftopic-nav%2Ftopic-nav\"}":
-/*!**************************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Ftopic-nav%2Ftopic-nav"} ***!
-  \**************************************************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Ftopic-nav%2Ftopic-nav\"}":
+/*!***********************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Ftopic-nav%2Ftopic-nav"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _topicNav = _interopRequireDefault(__webpack_require__(/*! ./pages/topic-nav/topic-nav.vue */ "../../workspace/fangqiubai/pages/topic-nav/topic-nav.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _topicNav = _interopRequireDefault(__webpack_require__(/*! ./pages/topic-nav/topic-nav.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/topic-nav/topic-nav.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_topicNav.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/main.js?{\"page\":\"pages%2Fuser-chat%2Fuser-chat\"}":
-/*!**************************************************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/main.js?{"page":"pages%2Fuser-chat%2Fuser-chat"} ***!
-  \**************************************************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/main.js?{\"page\":\"pages%2Fuser-chat%2Fuser-chat\"}":
+/*!***********************************************************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/main.js?{"page":"pages%2Fuser-chat%2Fuser-chat"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../workspace/fangqiubai/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../DEV/HBuilder/fangqiubai/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _userChat = _interopRequireDefault(__webpack_require__(/*! ./pages/user-chat/user-chat.vue */ "../../workspace/fangqiubai/pages/user-chat/user-chat.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _userChat = _interopRequireDefault(__webpack_require__(/*! ./pages/user-chat/user-chat.vue */ "../../../../../../DEV/HBuilder/fangqiubai/pages/user-chat/user-chat.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_userChat.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../workspace/fangqiubai/pages.json":
-/*!************************************************************!*\
-  !*** P:/lxt/dev/HBuilderX/workspace/fangqiubai/pages.json ***!
-  \************************************************************/
+/***/ "../../../../../../DEV/HBuilder/fangqiubai/pages.json":
+/*!*********************************************!*\
+  !*** E:/DEV/HBuilder/fangqiubai/pages.json ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
