@@ -98,66 +98,78 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var homeListItem = function homeListItem() {return __webpack_require__.e(/*! import() | components/home/home-list-item */ "components/home/home-list-item").then(__webpack_require__.bind(null, /*! ../../components/home/home-list-item.vue */ "../../../../../../DEV/HBuilder/fangqiubai/components/home/home-list-item.vue"));};var homeInfo = function homeInfo() {return __webpack_require__.e(/*! import() | components/home/home-info */ "components/home/home-info").then(__webpack_require__.bind(null, /*! ../../components/home/home-info.vue */ "../../../../../../DEV/HBuilder/fangqiubai/components/home/home-info.vue"));};var otherLogin = function otherLogin() {return __webpack_require__.e(/*! import() | components/home/other-login */ "components/home/other-login").then(__webpack_require__.bind(null, /*! ../../components/home/other-login.vue */ "../../../../../../DEV/HBuilder/fangqiubai/components/home/other-login.vue"));};var homeData = function homeData() {return __webpack_require__.e(/*! import() | components/home/home-data */ "components/home/home-data").then(__webpack_require__.bind(null, /*! ../../components/home/home-data.vue */ "../../../../../../DEV/HBuilder/fangqiubai/components/home/home-data.vue"));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    homeListItem: homeListItem,
+    homeInfo: homeInfo,
+    otherLogin: otherLogin,
+    homeData: homeData },
+
   data: function data() {
     return {
-      islogin: true };
+      islogin: true,
+      homeinfo: {
+        userpic: "../../static/demo/userpic/11.jpg",
+        username: "昵称",
+        totalnum: 0,
+        todaynum: 0 },
+
+      homedata: [
+      { name: "糗事", num: 0 },
+      { name: "动态", num: 0 },
+      { name: "评论", num: 0 },
+      { name: "收藏", num: 0 }],
+
+      list: [
+      { icon: "liulan", name: "浏览历史", clicktype: "", url: "" },
+      { icon: "huiyuanvip", name: "糗百认证", clicktype: "", url: "" },
+      { icon: "keyboard", name: "审核糗事", clicktype: "", url: "" }] };
+
 
   },
   onNavigationBarButtonTap: function onNavigationBarButtonTap(e) {
     if (e.index == 0) {
-      console.log('跳转到设置页', " at pages\\home\\home.vue:57");
+      uni.navigateTo({
+        url: '../user-set/user-set' });
+
     }
   },
   methods: {} };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),
 
