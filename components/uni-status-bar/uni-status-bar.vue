@@ -1,13 +1,19 @@
 <template>
-	<view :style="{ height: statusBarHeight }" class="uni-status-bar">
+	<view :style="{ height: statusBarHeight, background:statusBarbg}" class="uni-status-bar">
 		<slot />
 	</view>
 </template>
 
 <script>
-	var statusBarHeight = uni.getSystemInfoSync().statusBarHeight + 'px'
+	let statusBarHeight = uni.getSystemInfoSync().statusBarHeight + 'px';
 	export default {
 		name: 'UniStatusBar',
+		props:{
+			statusBarbg:{
+				type:"String",
+				default:"",
+			}
+		},
 		data() {
 			return {
 				statusBarHeight: statusBarHeight

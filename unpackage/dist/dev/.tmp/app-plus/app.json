@@ -13,7 +13,8 @@
     "pages/details/details",
     "pages/user-set/user-set",
     "pages/user-set-resetpassword/user-set-resetpassword",
-    "pages/user-set-userinfo/user-set-userinfo"
+    "pages/user-set-userinfo/user-set-userinfo",
+    "pages/login/login"
   ],
   "subPackages": [],
   "window": {

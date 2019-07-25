@@ -141,7 +141,7 @@ __webpack_require__.r(__webpack_exports__);
 
   data: function data() {
     return {
-      islogin: true,
+      islogin: false,
       homeinfo: {
         userpic: "../../static/demo/userpic/11.jpg",
         username: "昵称",
@@ -168,7 +168,13 @@ __webpack_require__.r(__webpack_exports__);
 
     }
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    openLogin: function openLogin() {
+      console.log('go to 账号密码登陆', " at pages\\home\\home.vue:73");
+      uni.navigateTo({
+        url: '../login/login' });
+
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),

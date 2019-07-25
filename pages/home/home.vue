@@ -6,7 +6,7 @@
 			<!-- 第三方登陆 -->
 			<other-login></other-login>
 			<!-- 账号密码登陆 -->
-			<view class="u-f-ajc">账号密码登陆 <view class="icon iconfont icon-jinru"></view></view>
+			<view class="u-f-ajc" @tap="openLogin">账号密码登陆 <view class="icon iconfont icon-jinru"></view></view>
 		</template>
 		<!-- 个人信息 -->
 		<template v-if="islogin">
@@ -41,7 +41,7 @@
 		},
 		data() {
 			return {
-				islogin:true,
+				islogin:false,
 				homeinfo:{
 					userpic:"../../static/demo/userpic/11.jpg",
 					username:"昵称",
@@ -69,7 +69,12 @@
 			}
 		},
 		methods: {
-			
+			openLogin(){
+				console.log('go to 账号密码登陆');
+				uni.navigateTo({
+					url: '../login/login',
+				});
+			},
 		}
 	}
 </script>
