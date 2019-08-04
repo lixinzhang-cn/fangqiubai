@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<uni-status-bar statusBarbg="#FFE933"></uni-status-bar>
+		<!-- <uni-status-bar statusBarbg="#FFE933"></uni-status-bar> -->
 		<!-- 关闭按钮 -->
 		<view class="icon iconfont icon-guanbi" @tap="back"></view>
 		<!-- 引入背景图 -->
@@ -59,11 +59,11 @@
 </template>
 
 <script>
-	import uniStatusBar from '../../components/uni-status-bar/uni-status-bar.vue';
+	//import uniStatusBar from '../../components/uni-status-bar/uni-status-bar.vue';
 	import otherLogin from '../../components/home/other-login.vue';
 	export default {
 		components:{
-			uniStatusBar,
+			//uniStatusBar,
 			otherLogin
 		},
 		data() {

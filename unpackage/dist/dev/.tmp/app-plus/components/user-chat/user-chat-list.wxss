@@ -1,8 +1,8 @@
 
-.user-chat-list.data-v-5343b6b5{
+.user-chat-list.data-v-02cb49d9{
 	padding: 20rpx 0;
 }
-.user-chat-list>image.data-v-5343b6b5{
+.user-chat-list>image.data-v-02cb49d9{
 	width: 100rpx;
 	height: 100rpx;
 	-webkit-border-radius: 100%;
@@ -11,7 +11,7 @@
 	    -ms-flex-negative: 0;
 	        flex-shrink: 0;
 }
-.user-chat-body.data-v-5343b6b5{
+.user-chat-body.data-v-02cb49d9{
 	position: relative;
 	background: #F4F4F4;
 	padding: 25rpx;
@@ -20,7 +20,7 @@
 	        border-radius: 20rpx;
 	margin-right: 100rpx;
 }
-.user-chat-body.data-v-5343b6b5:after{
+.user-chat-body.data-v-02cb49d9:after{
 	position: absolute;
 	left: -30rpx;
 	right: 0;
@@ -31,26 +31,26 @@
 	border: 16rpx solid #F4F4F4;
 	border-color: transparent #F4F4F4 transparent transparent;
 }
-.user-chat-me.data-v-5343b6b5{
+.user-chat-me.data-v-02cb49d9{
 	-webkit-box-pack: end;
 	-webkit-justify-content: flex-end;
 	    -ms-flex-pack: end;
 	        justify-content: flex-end;
 }
-.user-chat-me .user-chat-body.data-v-5343b6b5{
+.user-chat-me .user-chat-body.data-v-02cb49d9{
 	margin-right: 20rpx;
 	margin-left: 100rpx;
 }
-.user-chat-me .user-chat-body.data-v-5343b6b5:after{
+.user-chat-me .user-chat-body.data-v-02cb49d9:after{
 	left:auto;
 	right: -30rpx;
 	border-color:transparent transparent transparent #F4F4F4;
 }
-.user-chat-body>image.data-v-5343b6b5{
+.user-chat-body>image.data-v-02cb49d9{
 	max-width: 150rpx;
 	max-height: 200rpx;
 }
-.user-chat-time.data-v-5343b6b5{
+.user-chat-time.data-v-02cb49d9{
 	padding: 50rpx 0;
 	color: #a2a2a2;
 	font-size: 24rpx;
