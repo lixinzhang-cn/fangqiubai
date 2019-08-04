@@ -98,7 +98,46 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var userSpace = function userSpace() {return __webpack_require__.e(/*! import() | components/user-space/user-space */ "components/user-space/user-space").then(__webpack_require__.bind(null, /*! ../../components/user-space/user-space.vue */ "../../workspace/fangqiubai/components/user-space/user-space.vue"));};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var userSpace = function userSpace() {return __webpack_require__.e(/*! import() | components/user-space/user-space */ "components/user-space/user-space").then(__webpack_require__.bind(null, /*! ../../components/user-space/user-space.vue */ "../../workspace/fangqiubai/components/user-space/user-space.vue"));};var homeData = function homeData() {return __webpack_require__.e(/*! import() | components/home/home-data */ "components/home/home-data").then(__webpack_require__.bind(null, /*! ../../components/home/home-data.vue */ "../../workspace/fangqiubai/components/home/home-data.vue"));};var swiperTabHead = function swiperTabHead() {return __webpack_require__.e(/*! import() | components/index/swiper-tab-head */ "components/index/swiper-tab-head").then(__webpack_require__.bind(null, /*! ../../components/index/swiper-tab-head.vue */ "../../workspace/fangqiubai/components/index/swiper-tab-head.vue"));};var userSpaceUserinfo = function userSpaceUserinfo() {return Promise.all(/*! import() | components/user-space/user-space-userinfo */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/user-space/user-space-userinfo")]).then(__webpack_require__.bind(null, /*! ../../components/user-space/user-space-userinfo.vue */ "../../workspace/fangqiubai/components/user-space/user-space-userinfo.vue"));};var commonList = function commonList() {return __webpack_require__.e(/*! import() | components/common/common-list */ "components/common/common-list").then(__webpack_require__.bind(null, /*! ../../components/common/common-list.vue */ "../../workspace/fangqiubai/components/common/common-list.vue"));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | components/common/load-more */ "components/common/load-more").then(__webpack_require__.bind(null, /*! ../../components/common/load-more.vue */ "../../workspace/fangqiubai/components/common/load-more.vue"));};var userSpacePopup = function userSpacePopup() {return __webpack_require__.e(/*! import() | components/user-space/user-space-popup */ "components/user-space/user-space-popup").then(__webpack_require__.bind(null, /*! ../../components/user-space/user-space-popup.vue */ "../../workspace/fangqiubai/components/user-space/user-space-popup.vue"));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -109,21 +148,231 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 {
   components: {
-    userSpace: userSpace },
+    userSpace: userSpace,
+    homeData: homeData,
+    swiperTabHead: swiperTabHead,
+    userSpaceUserinfo: userSpaceUserinfo,
+    commonList: commonList,
+    loadMore: loadMore,
+    userSpacePopup: userSpacePopup },
 
   data: function data() {
     return {
+      show: false,
       userinfo: {
         bgimg: 1,
         userpic: "../../static/demo/userpic/11.jpg",
         username: "昵称",
         sex: 0,
         age: 20,
-        isguanzhu: false } };
+        isguanzhu: false,
+        regtime: "2019-04-12",
+        id: 1231,
+        birthday: "1988-06-23",
+        job: "IT",
+        path: "河南洛阳",
+        qg: "已婚" },
+
+      spaceData: [
+      { name: "获赞", num: "10k" },
+      { name: "关注", num: 11 },
+      { name: "粉丝", num: 12 }],
+
+      tabIndex: 0,
+      tabBars: [
+      { name: "主页", id: "zhuye" },
+      { name: "糗事", id: "qiushi" },
+      { name: "动态", id: "dongtai" }],
+
+      topiclist: [
+      {},
+      {
+        loadtext: "上拉加载更多",
+        list: [
+        // 文字
+        {
+          userpic: "../../static/demo/userpic/12.jpg",
+          username: "哈哈",
+          sex: 0, //0 男 1 女
+          age: 25,
+          isguanzhu: false,
+          title: "我是标题",
+          titlepic: "",
+          video: false,
+          share: false,
+          path: "深圳 龙岗",
+          sharenum: 20,
+          commentnum: 30,
+          goodnum: 20 },
+
+        // 图文
+        {
+          userpic: "../../static/demo/userpic/12.jpg",
+          username: "哈哈",
+          sex: 1, //0 男 1 女
+          age: 25,
+          isguanzhu: false,
+          title: "我是标题",
+          titlepic: "../../static/demo/datapic/13.jpg",
+          video: false,
+          share: false,
+          path: "深圳 龙岗",
+          sharenum: 20,
+          commentnum: 30,
+          goodnum: 20 },
+
+        // 视频
+        {
+          userpic: "../../static/demo/userpic/12.jpg",
+          username: "哈哈",
+          sex: 1, //0 男 1 女
+          age: 25,
+          isguanzhu: false,
+          title: "我是标题",
+          titlepic: "../../static/demo/datapic/13.jpg",
+          video: {
+            looknum: "20w",
+            long: "2:47" },
+
+          share: false,
+          path: "深圳 龙岗",
+          sharenum: 20,
+          commentnum: 30,
+          goodnum: 20 }] },
+
+
+
+
+      {
+        loadtext: "上拉加载更多",
+        list: [
+        // 文字
+        {
+          userpic: "../../static/demo/userpic/12.jpg",
+          username: "哈哈",
+          sex: 0, //0 男 1 女
+          age: 25,
+          isguanzhu: false,
+          title: "我是标题",
+          titlepic: "",
+          video: false,
+          share: false,
+          path: "深圳 龙岗",
+          sharenum: 20,
+          commentnum: 30,
+          goodnum: 20 },
+
+        // 图文
+        {
+          userpic: "../../static/demo/userpic/12.jpg",
+          username: "哈哈",
+          sex: 1, //0 男 1 女
+          age: 25,
+          isguanzhu: false,
+          title: "我是标题",
+          titlepic: "../../static/demo/datapic/13.jpg",
+          video: false,
+          share: false,
+          path: "深圳 龙岗",
+          sharenum: 20,
+          commentnum: 30,
+          goodnum: 20 },
+
+        // 视频
+        {
+          userpic: "../../static/demo/userpic/12.jpg",
+          username: "哈哈",
+          sex: 1, //0 男 1 女
+          age: 25,
+          isguanzhu: false,
+          title: "我是标题",
+          titlepic: "../../static/demo/datapic/13.jpg",
+          video: {
+            looknum: "20w",
+            long: "2:47" },
+
+          share: false,
+          path: "深圳 龙岗",
+          sharenum: 20,
+          commentnum: 30,
+          goodnum: 20 },
+
+        // 分享
+        {
+          userpic: "../../static/demo/userpic/12.jpg",
+          username: "哈哈",
+          sex: 0, //0 男 1 女
+          age: 25,
+          isguanzhu: false,
+          title: "我是标题",
+          titlepic: "",
+          video: false,
+          share: {
+            title: "我是分享的标题",
+            titlepic: "../../static/demo/datapic/14.jpg" },
+
+          path: "深圳 龙岗",
+          sharenum: 20,
+          commentnum: 30,
+          goodnum: 20 }] }] };
+
+
+
 
 
   },
-  methods: {} };exports.default = _default;
+  //监听页面触底事件 
+  onReachBottom: function onReachBottom() {
+    // 上拉加载
+    this.loadmore();
+  },
+  onNavigationBarButtonTap: function onNavigationBarButtonTap(e) {
+    if (e.index == 0) {
+      this.changeshow();
+    }
+  },
+  methods: {
+    // 显示隐藏操作菜单
+    changeshow: function changeshow() {
+      this.show = !this.show;
+    },
+    pullblacklist: function pullblacklist() {
+      console.log("拉黑", " at pages\\user-space\\user-space.vue:240");
+      this.changeshow();
+    },
+    guanzhu: function guanzhu() {
+      console.log("关注", " at pages\\user-space\\user-space.vue:244");
+      this.changeshow();
+    },
+    // tabbar点击事件
+    tabtap: function tabtap(index) {
+      this.tabIndex = index;
+    },
+    loadmore: function loadmore() {var _this = this;
+      if (this.topiclist[this.tabIndex].loadtext != "上拉加载更多") {return;}
+      // 修改状态
+      this.topiclist[this.tabIndex].loadtext = "加载中...";
+      // 获取数据
+      setTimeout(function () {
+        //获取完成
+        var obj = { userpic: "../../static/demo/userpic/12.jpg",
+          username: "哈哈",
+          sex: 1, //0 男 1 女
+          age: 25,
+          isguanzhu: false,
+          title: "我是标题",
+          titlepic: "../../static/demo/datapic/13.jpg",
+          video: false,
+          share: false,
+          path: "深圳 龙岗",
+          sharenum: 20,
+          commentnum: 30,
+          goodnum: 20 };
+        _this.topiclist[_this.tabIndex].list.push(obj);
+        _this.topiclist[_this.tabIndex].loadtext = "上拉加载更多";
+      }, 1000);
+      // this.topiclist[this.tabIndex].loadtext="没有更多数据了";
+    } } };exports.default = _default;
 
 /***/ }),
 

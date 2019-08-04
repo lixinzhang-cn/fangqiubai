@@ -10,6 +10,12 @@
     ]
   },
   "usingComponents": {
-    "user-space": "/components/user-space/user-space"
+    "user-space": "/components/user-space/user-space",
+    "home-data": "/components/home/home-data",
+    "swiper-tab-head": "/components/index/swiper-tab-head",
+    "user-space-userinfo": "/components/user-space/user-space-userinfo",
+    "common-list": "/components/common/common-list",
+    "load-more": "/components/common/load-more",
+    "user-space-popup": "/components/user-space/user-space-popup"
   }
 }

@@ -1,0 +1,31 @@
+
+.paper-menu.data-v-310feccb{
+	background: #FFFFFF;
+	z-index: 2000;
+	right:0;
+	top:110rpx;
+	width:55%;
+	position: fixed;
+	-webkit-box-shadow: 1rpx 1rpx 20rpx 2rpx #CCCCCC;
+	        box-shadow: 1rpx 1rpx 20rpx 2rpx #CCCCCC;
+}
+.paper-menu>view.data-v-310feccb{
+	padding:20rpx;
+	font-size: 35rpx;
+}
+.paper-menu>view>view.data-v-310feccb{
+	margin-right: 10rpx;
+	font-weight: bold;
+}
+.paper-menu-item-h.data-v-310feccb{
+	background: #EEEEEE;
+}
+.paper-menu-mask.data-v-310feccb{
+	position: fixed;
+	z-index: 1999;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+

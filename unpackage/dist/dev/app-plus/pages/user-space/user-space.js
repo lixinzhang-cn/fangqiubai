@@ -1,2 +1,2 @@
-setCssToHead([".",[1],"user-space-margin{ margin: ",[0,15]," 0; }\n",],undefined,{path:"./pages/user-space/user-space.wxss"})();
+setCssToHead([".",[1],"user-space-margin{ margin: ",[0,15]," 0; }\n.",[1],"user-space-data{ background: #FFFFFF; margin-top:",[0,-15],"; -webkit-border-top-left-radius: ",[0,10],"; border-top-left-radius: ",[0,10],"; -webkit-border-top-right-radius: ",[0,10],"; border-top-right-radius: ",[0,10],"; position: relative; z-index: 10; }\n",],undefined,{path:"./pages/user-space/user-space.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user-space/user-space.wxml') } }));

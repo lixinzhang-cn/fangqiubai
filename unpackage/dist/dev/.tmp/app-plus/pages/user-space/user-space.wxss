@@ -2,5 +2,15 @@
 .user-space-margin{
 	margin: 15rpx 0;
 }
+.user-space-data{
+	background: #FFFFFF;
+	margin-top:-15rpx;
+	-webkit-border-top-left-radius: 10rpx;
+	        border-top-left-radius: 10rpx;
+	-webkit-border-top-right-radius: 10rpx;
+	        border-top-right-radius: 10rpx;
+	position: relative;
+	z-index: 10;
+}
 
 
