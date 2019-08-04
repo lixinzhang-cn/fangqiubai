@@ -10,7 +10,7 @@
 		name: 'UniStatusBar',
 		props:{
 			statusBarbg:{
-				type:"String",
+				type:String,
 				default:"",
 			}
 		},
