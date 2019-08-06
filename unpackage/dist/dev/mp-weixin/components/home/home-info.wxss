@@ -1,0 +1,21 @@
+
+.home-info.data-v-40c2e9ca{
+	padding: 20rpx;
+}
+.home-info>image.data-v-40c2e9ca{
+	width: 100rpx;
+	height:100rpx;
+	-webkit-border-radius: 100%;
+	        border-radius: 100%;
+	margin-right: 15rpx;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+}
+.home-info>view:first-of-type>view.data-v-40c2e9ca:first-child{
+	font-size: 32rpx;
+}
+.home-info>view:first-of-type>view.data-v-40c2e9ca:last-child{
+	color:#BBBBBB;
+}
+

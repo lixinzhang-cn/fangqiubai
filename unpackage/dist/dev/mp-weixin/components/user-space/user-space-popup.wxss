@@ -1,0 +1,31 @@
+
+.paper-menu.data-v-c1d7fb22{
+	background: #FFFFFF;
+	z-index: 2000;
+	right:0;
+	top:110rpx;
+	width:55%;
+	position: fixed;
+	-webkit-box-shadow: 1rpx 1rpx 20rpx 2rpx #CCCCCC;
+	        box-shadow: 1rpx 1rpx 20rpx 2rpx #CCCCCC;
+}
+.paper-menu>view.data-v-c1d7fb22{
+	padding:20rpx;
+	font-size: 35rpx;
+}
+.paper-menu>view>view.data-v-c1d7fb22{
+	margin-right: 10rpx;
+	font-weight: bold;
+}
+.paper-menu-item-h.data-v-c1d7fb22{
+	background: #EEEEEE;
+}
+.paper-menu-mask.data-v-c1d7fb22{
+	position: fixed;
+	z-index: 1999;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+

@@ -20,7 +20,7 @@
 					{ icon:"",name:"绑定邮箱",clicktype:"",url:"" },
 					{ icon:"",name:"资料编辑",clicktype:"navigateTo",url:"../user-set-userinfo/user-set-userinfo" },
 					{ icon:"",name:"小纸条",clicktype:"",url:"" },
-					{ icon:"",name:"清除缓存",clicktype:"",url:"" },
+					{ icon:"",name:"清除缓存",clicktype:"clear",url:"" },
 					{ icon:"",name:"意见反馈",clicktype:"",url:"" },
 					{ icon:"",name:"关于糗百",clicktype:"",url:"" },
 				]

@@ -7,7 +7,15 @@
     "pages/search/search",
     "pages/add-input/add-input",
     "pages/topic-nav/topic-nav",
-    "pages/topic-detail/topic-detail"
+    "pages/topic-detail/topic-detail",
+    "pages/paper-friends/paper-friends",
+    "pages/user-chat/user-chat",
+    "pages/details/details",
+    "pages/user-set/user-set",
+    "pages/user-set-resetpassword/user-set-resetpassword",
+    "pages/user-set-userinfo/user-set-userinfo",
+    "pages/login/login",
+    "pages/user-space/user-space"
   ],
   "subPackages": [],
   "window": {
@@ -48,5 +56,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }
